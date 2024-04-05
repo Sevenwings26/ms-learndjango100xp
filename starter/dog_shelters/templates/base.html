@@ -1,0 +1,21 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>{% block title %} Dog shelter site {% endblock %}</title>
+</head>
+<body>
+    <article class="container">
+        <section class="jumbotron">
+            <h1>Dog shelter application</h1>
+        </section>
+        {% block content %}
+        
+        {% endblock %}
+    </article>
+</body>
+</html>
