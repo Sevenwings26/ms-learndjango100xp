@@ -21,3 +21,5 @@ def shelter_detail(request, pk):
     shelter = get_object_or_404(models.Shelter, pk=pk)
     context = {'shelter':shelter}
     return render(request,'shelter_detail.html',context)
+
+
