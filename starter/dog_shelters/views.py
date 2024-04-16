@@ -6,6 +6,7 @@ from . import models
 # TODO: Import generic views 
 from django.views import generic
 
+
 class DogDetailView(generic.DetailView):
     model = models.Dog
     template_name = 'dog_detail.html'
