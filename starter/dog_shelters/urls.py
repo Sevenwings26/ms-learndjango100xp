@@ -7,4 +7,6 @@ urlpatterns = [
 
     #TODO: Register Detail View
     path('dog<int:pk>', views.DogDetailView.as_view(), name='dog_detail'),
+    path('dog/register', views.DogCreateView.as_view(), name='dog_register'),
+
 ]

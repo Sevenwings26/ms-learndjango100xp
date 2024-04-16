@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from . import models
 # Create your views here.
 
-# Generic views 
+# Generic views used for displaying data
 # TODO: Import generic views 
 from django.views import generic
 
@@ -22,4 +22,9 @@ def shelter_detail(request, pk):
     context = {'shelter':shelter}
     return render(request,'shelter_detail.html',context)
 
-
+# for dog registration... 
+# Create form from model using CreateView
+class DogCreateView(generic.CreateView):
+    model = models.Dog
+    template_name = 'dog_form.html'
+    fields = ['shelter', 'name', 'description']
